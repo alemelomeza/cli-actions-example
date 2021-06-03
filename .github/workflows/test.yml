@@ -1,0 +1,7 @@
+name: Test hello package
+on: push
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 It's works"

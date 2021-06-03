@@ -6,3 +6,5 @@ jobs:
     steps:
       - run: echo "🎉 It's works"
       - run: echo "🐙 ${{github.repository}}"
+      - uses: actions/checkout@v2
+      - run: go version

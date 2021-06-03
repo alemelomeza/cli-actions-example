@@ -4,10 +4,8 @@ jobs:
   Testing:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 It's works"
-      - run: echo "🐙 ${{github.repository}}"
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
         with:
           go-version: '1.12' 
-      - run: go version
+      - run: go test -v -cover -run Hello

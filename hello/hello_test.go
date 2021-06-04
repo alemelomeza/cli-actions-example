@@ -6,6 +6,13 @@ import (
 	"github.com/alemelomeza/cli-actions-example/hello"
 )
 
+func TestPRConcep(t *testing.T) {
+	got := hello.PRConcepTest()
+	want := 4
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}
 func TestHello(t *testing.T) {
 	got := hello.Hello()
 	want := "Hello, world!"

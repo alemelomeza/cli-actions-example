@@ -8,7 +8,7 @@ import (
 
 func TestPRConcep(t *testing.T) {
 	got := hello.PRConcepTest()
-	want := 4
+	want := 5
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
 	}

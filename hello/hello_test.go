@@ -13,3 +13,11 @@ func TestHello(t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+
+func PRConcepTest(t *testing.T) {
+	got := hello.PRConcepTest()
+	want := 4
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}
